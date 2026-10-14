@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relevé des prix - ISSEA</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Relevé des prix des marchés</h1>
+        <p>Collecte des prix des produits alimentaires au Cameroun.</p>
+
+        <form>
+            <label for="ville">Ville</label>
+            <select id="ville" name="ville" required>
+                <option value="">Choisir une ville</option>
+                <option value="Yaounde">Yaoundé</option>
+                <option value="Douala">Douala</option>
+                <option value="Garoua">Garoua</option>
+                <option value="Bafoussam">Bafoussam</option>
+            </select>
+
+            <label for="produit">Produit</label>
+            <input id="produit" name="produit"
+                   type="text" placeholder="Ex. : manioc" required>
+
+            <label for="prix">Prix (FCFA)</label>
+            <input id="prix" name="prix" type="number"
+                   min="1" step="1" required>
+
+            <label for="date">Date du relevé</label>
+            <input id="date" name="date" type="date" required>
+
+            <button type="submit">Enregistrer le relevé</button>
+        </form>
+
+        <p class="note">
+            TP de programmation Web en Python — AS3, ISSEA
+        </p>
+    </main>
+</body>
+</html>
